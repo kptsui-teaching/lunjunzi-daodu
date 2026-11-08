@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>《論君子》範文導讀｜漢華中學中國語文科</title>
+<style>
+
+:root{
+  --blue:#2563eb;--blue-dark:#1d4ed8;--blue-soft:#eff6ff;--blue-mid:#dbeafe;
+  --ink:#1f2937;--muted:#4b5563;--line:#e5e7eb;--card:#fff;--bg:#f4f6fb;
+  --ok:#16a34a;--ok-bg:#dcfce7;--bad:#dc2626;--bad-bg:#fee2e2;--warn:#b45309;--warn-bg:#fef3c7;
+  --radius:14px;--shadow:0 1px 4px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Noto Sans TC","PingFang TC","PingFang HK","Microsoft JhengHei","Noto Sans CJK TC",sans-serif;background:var(--bg);color:var(--ink);font-size:17px;line-height:1.65}
+a{color:var(--blue)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:8px;top:8px;background:#fff;padding:8px 12px;z-index:100;border-radius:8px}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);box-shadow:0 1px 0 rgba(37,99,235,.06)}
+.topbar-inner{max-width:880px;margin:0 auto;padding:10px 14px 8px}
+.brand{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;margin-bottom:6px}
+.brand .school{font-size:.85rem;color:var(--blue);font-weight:700;letter-spacing:.02em}
+.brand h1{margin:0;font-size:1.15rem;font-weight:800}
+.nav{display:flex;flex-wrap:wrap;gap:6px}
+.nav a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:6px 12px;border-radius:999px;background:var(--blue-soft);color:var(--blue-dark);text-decoration:none;font-weight:700;font-size:.92rem;border:1px solid transparent}
+.nav a:hover,.nav a:focus{background:var(--blue);color:#fff;outline:none}
+main{max-width:880px;margin:0 auto;padding:16px 14px 80px}
+.sec{margin:22px 0 28px;scroll-margin-top:110px}
+.sec>h2{margin:0 0 12px;font-size:1.35rem;color:var(--blue-dark);padding-bottom:6px;border-bottom:3px solid var(--blue-mid)}
+.sec>h3,.card h3{margin:16px 0 8px;font-size:1.08rem}
+.card{background:var(--card);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow);margin:10px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+@media(max-width:700px){.grid2,.grid3{grid-template-columns:1fr}}
+.pill{display:inline-block;background:var(--blue-soft);color:var(--blue-dark);border-radius:999px;padding:2px 10px;font-size:.85rem;font-weight:700;margin-right:4px}
+.muted{color:var(--muted);font-size:.95rem}
+.person{border-left:4px solid var(--blue);padding-left:12px;margin:10px 0}
+.story{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#fafbff}
+.story h4{margin:0 0 8px;color:var(--blue-dark)}
+.story dl{margin:0;display:grid;grid-template-columns:4.5em 1fr;gap:4px 8px}
+.story dt{font-weight:700;color:var(--muted)}.story dd{margin:0}
+.story .baihua{margin:10px 0 0;padding:10px 12px;background:#f0fdf4;border-left:4px solid #16a34a;border-radius:0 10px 10px 0;font-size:.95rem;line-height:1.65;color:#14532d}
+.story .baihua strong{color:#166534}
+.vocab{display:grid;gap:8px}
+.vocab-item{display:grid;grid-template-columns:minmax(7em,auto) 1fr;gap:8px 12px;padding:10px 12px;background:#fafbff;border-radius:10px;border:1px solid var(--line)}
+.vocab-item b{color:var(--blue-dark)}
+@media(max-width:560px){.vocab-item{grid-template-columns:1fr}}
+.struct ul{margin:6px 0;padding-left:1.2em}.struct li{margin:4px 0}
+.student-form{display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:10px}
+@media(max-width:640px){.student-form{grid-template-columns:1fr}}
+label.field{display:block;font-weight:700;font-size:.92rem;margin-bottom:4px}
+input.field,select.field{width:100%;min-height:48px;padding:10px 12px;font:inherit;border:2px solid #d1d5db;border-radius:10px;background:#fff}
+input.field:focus,select.field:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,.2)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.tabs button{flex:1;min-width:120px;min-height:48px;font:inherit;font-weight:700;border:2px solid var(--blue);border-radius:12px;background:#fff;color:var(--blue);cursor:pointer}
+.tabs button.active,.tabs button[aria-selected="true"]{background:var(--blue);color:#fff}
+.prog-row{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:.95rem;color:var(--muted);margin:8px 0 4px}
+.bar{height:10px;background:#e5e7eb;border-radius:6px;overflow:hidden}
+.bar>div{height:100%;background:var(--blue);width:0;transition:width .3s}
+.overall{background:var(--blue-soft);border:1px solid var(--blue-mid);border-radius:12px;padding:12px 14px;margin:12px 0}
+.opt{display:flex;align-items:flex-start;gap:10px;min-height:56px;padding:12px;margin:8px 0;border:2px solid #d1d5db;border-radius:12px;background:#fff;cursor:pointer;text-align:left}
+.opt input{width:22px;height:22px;margin-top:3px;flex:none}
+.opt.sel{border-color:var(--blue);background:var(--blue-soft)}
+.opt.ok{border-color:var(--ok);background:var(--ok-bg)}
+.opt.bad{border-color:var(--bad);background:var(--bad-bg)}
+.stem{font-size:1.08rem;font-weight:700;margin:0 0 10px}
+.fb{margin-top:12px;padding:12px;border-radius:10px}
+.fb.ok{background:var(--ok-bg)}.fb.bad{background:var(--bad-bg)}
+.btn{font:inherit;font-weight:700;min-height:52px;width:100%;margin-top:12px;border:0;border-radius:12px;background:var(--blue);color:#fff;cursor:pointer}
+.btn:disabled{background:#9ca3af;cursor:not-allowed}
+.btn.sec{background:#fff;color:var(--blue);border:2px solid var(--blue)}
+.btn.ok{background:var(--ok)}
+.btn.warn{background:#d97706}
+.btn-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:500px){.btn-row{grid-template-columns:1fr}}
+.big{font-size:1.8rem;font-weight:800;text-align:center;margin:8px 0}
+.rv{border-top:1px solid var(--line);padding:10px 0}.rv .t{font-weight:700}.c{color:#15803d}.w{color:#b91c1c}
+.note{background:var(--warn-bg);border-left:4px solid var(--warn);padding:10px 12px;border-radius:0 10px 10px 0;margin:10px 0;font-size:.95rem}
+.video-box{aspect-ratio:16/9;background:linear-gradient(135deg,#dbeafe,#eff6ff);border:2px dashed #93c5fd;border-radius:14px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;padding:20px;text-align:center;color:var(--muted)}
+.video-box iframe{width:100%;height:100%;border:0;border-radius:12px}
+.video-wrap{position:relative;width:100%;padding-bottom:56.25%;height:0;border-radius:14px;overflow:hidden;background:#000}
+.video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:12px}
+.footer{max-width:880px;margin:0 auto;padding:8px 14px 28px;color:var(--muted);font-size:.88rem;text-align:center}
+[hidden]{display:none!important}
+@media print{
+  .topbar{position:static;box-shadow:none}
+  .nav,.btn,#quizPanel .btn,.student-form,input,select,.tabs{display:none!important}
+  body{background:#fff;font-size:14px}
+  .card,.story,.vocab-item{box-shadow:none;border:1px solid #ccc}
+  .sec{break-inside:avoid}
+}
+.classic{font-size:1.05rem;line-height:2;letter-spacing:.02em}
+.classic p{margin:0 0 1em}
+.classic h3{margin:18px 0 10px;font-size:1.1rem;color:var(--blue-dark);border-left:4px solid var(--blue);padding-left:10px}
+.classic .attr{margin-top:12px;padding-top:10px;border-top:1px dashed var(--line);font-size:.9rem;color:var(--muted);line-height:1.55}
+.classic .poem-line{font-size:1.15rem;font-weight:600;letter-spacing:.06em;text-align:center;margin:0.35em 0}
+.classic .poem-title{text-align:center;font-size:1.25rem;font-weight:800;margin:0 0 4px;color:var(--blue-dark)}
+.classic .poem-author{text-align:center;margin:0 0 16px;color:var(--muted);font-size:.95rem}
+.yuyi{line-height:1.85}
+.yuyi p{margin:0 0 .95em}
+.yuyi h3{margin:18px 0 10px;font-size:1.1rem;color:var(--blue-dark);border-left:4px solid var(--blue);padding-left:10px}
+.sec-head-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin:0 0 12px;padding-bottom:6px;border-bottom:3px solid var(--blue-mid)}
+.sec-head-row h2{margin:0;padding:0;border:0;font-size:1.35rem;color:var(--blue-dark)}
+.btn-toggle{font:inherit;font-weight:700;font-size:.88rem;min-height:40px;padding:6px 14px;border-radius:999px;border:2px solid var(--blue);background:#fff;color:var(--blue);cursor:pointer;width:auto;margin:0}
+.btn-toggle:hover,.btn-toggle:focus{background:var(--blue);color:#fff;outline:none}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳至正文</a>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="school">漢華中學中國語文科</span>
+      <h1>《論君子》範文導讀</h1>
+    </div>
+    <nav class="nav" aria-label="章節導航">
+      <a href="#daodu">導讀</a>
+      <a href="#quanwen">全文</a>
+      <a href="#yuyi">語譯</a>
+      <a href="#zici">重點字詞</a>
+      <a href="#zhangfa">章法／寫作手法</a>
+      <a href="#zice">自測</a>
+      <a href="#shipin">影片</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ========== 1 導讀 ========== -->
+<section class="sec" id="daodu">
+  <h2>一、導讀</h2>
+  <p class="muted">對象：中四至中六　｜　篇章：《論君子》（《論語》）　｜　用途：學生自學＋課堂投影</p>
+
+  <div class="card">
+    <h3>孔子與「君子」</h3>
+    <div class="person"><span class="pill">人物</span><strong>孔子</strong>（公元前 551 或 552 – 公元前 479），名<strong>丘</strong>，字<strong>仲尼</strong>，春秋末期魯國人，儒家學派創始人。主張以德服人、施行仁政；開啟私人講學，主張「有教無類」「因材施教」。</div>
+    <p style="margin-top:12px">在儒家思想中，<strong>君子</strong>是孔子心目中的品德模範——處事莊重認真、言行一致、律己以嚴、待人以寬，內心坦蕩舒泰。《論語》以語錄體記載孔子及其弟子的言行；「君子」一詞在書中多次出現，足見其人格理想的重要性。本系列另有論仁、論孝，分別講仁德與孝道；本頁專溫君子的品德與修為。</p>
+  </div>
+
+  <div class="card">
+    <h3>指定篇與本頁範圍</h3>
+    <p>教育局指定文言經典《論仁、論孝、論君子》，由《論語》輯出，分<strong>三部分</strong>：論仁、論孝、論君子。<strong>本頁只溫「論君子」八章</strong>——由修身品德與擇友改過，到坦蕩內省、成人之美、言行一致，再到義禮孫信與求諸己。（論仁、論孝另頁／另集處理。）</p>
+    <p class="note">本頁全文嚴格跟教育局指定【論君子】八章（KS4_03 第 9–16 章）；坊間常見但不在本選段內的句子不收入本頁全文。</p>
+  </div>
+
+  <div class="card">
+    <h3>記住三個關鍵</h3>
+    <div class="grid3" style="margin-top:10px">
+      <article class="story">
+        <h4>① 重・學・改</h4>
+        <dl>
+          <dt>出處</dt><dd>《學而》第一</dd>
+          <dt>要點</dt><dd>莊重威儀、學習、忠信、擇友、改過。</dd>
+        </dl>
+        <p class="baihua"><strong>白話：</strong>君子<strong>不莊重</strong>就沒有威儀；要認真<strong>學習</strong>（「學則不固」有兩解）；以<strong>忠信</strong>為主；慎於擇友；有過則<strong>勿憚改</strong>。記住：修身從莊重、好學、改過做起。</p>
+      </article>
+      <article class="story">
+        <h4>② 坦蕩・內省</h4>
+        <dl>
+          <dt>出處</dt><dd>《述而》《顏淵》</dd>
+          <dt>要點</dt><dd>心胸寬廣；不憂不懼本於內省不疚。</dd>
+        </dl>
+        <p class="baihua"><strong>白話：</strong>君子<strong>坦蕩蕩</strong>，小人<strong>長戚戚</strong>。司馬牛問君子，孔子說不憂不懼——因為<strong>內省不疚</strong>，問心無愧，又何憂何懼？</p>
+      </article>
+      <article class="story">
+        <h4>③ 義以為質・求諸己</h4>
+        <dl>
+          <dt>出處</dt><dd>《衞靈公》等</dd>
+          <dt>要點</dt><dd>義→禮→孫→信；病無能；求諸己。</dd>
+        </dl>
+        <p class="baihua"><strong>白話：</strong>君子以<strong>義</strong>為本質，依<strong>禮</strong>實行，用<strong>謙遜</strong>說出，以<strong>誠信</strong>完成。只憂自己無能，不怨人不己知；<strong>求諸己</strong>，不求諸人。</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>八章綱要</h3>
+    <ul>
+      <li><strong>第一章</strong>（《學而》）：莊重威儀、學習、忠信、擇友、改過。</li>
+      <li><strong>第二章</strong>（《述而》）：君子坦蕩蕩，小人長戚戚。</li>
+      <li><strong>第三章</strong>（《顏淵》）：司馬牛問君子——不憂不懼／內省不疚。</li>
+      <li><strong>第四章</strong>（《顏淵》）：成人之美，不成人之惡；小人反是。</li>
+      <li><strong>第五章</strong>（《憲問》）：恥其言而過其行。</li>
+      <li><strong>第六章</strong>（《衞靈公》）：義以為質，禮以行之，孫以出之，信以成之。</li>
+      <li><strong>第七章</strong>（《衞靈公》）：病無能焉，不病人之不己知也。</li>
+      <li><strong>第八章</strong>（《衞靈公》）：求諸己 vs 求諸人。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== 2 全文 ========== -->
+<section class="sec" id="quanwen">
+  <h2>二、全文</h2>
+  <p class="muted">《論語》【論君子】八章　｜　文本依教育局「指定文言經典學習材料」參考版本</p>
+  <div class="card classic">
+    <div class="poem-title">論君子</div>
+    <div class="poem-author">《論語》</div>
+
+    <h3>1.《學而》第一</h3>
+    <p>子曰：「君子不重則不威；學則不固。主忠信。無友不如己者。過則勿憚改。」</p>
+
+    <h3>2.《述而》第七</h3>
+    <p>子曰：「君子坦蕩蕩，小人長戚戚。」</p>
+
+    <h3>3.《顏淵》第十二</h3>
+    <p>司馬牛問君子。子曰：「君子不憂不懼。」曰：「不憂不懼，斯謂之君子已乎？」子曰：「內省不疚，夫何憂何懼？」</p>
+
+    <h3>4.《顏淵》第十二</h3>
+    <p>子曰：「君子成人之美，不成人之惡。小人反是。」</p>
+
+    <h3>5.《憲問》第十四</h3>
+    <p>子曰：「君子恥其言而過其行。」</p>
+
+    <h3>6.《衞靈公》第十五</h3>
+    <p>子曰：「君子義以為質，禮以行之，孫以出之，信以成之。君子哉！」</p>
+
+    <h3>7.《衞靈公》第十五</h3>
+    <p>子曰：「君子病無能焉，不病人之不己知也。」</p>
+
+    <h3>8.《衞靈公》第十五</h3>
+    <p>子曰：「君子求諸己，小人求諸人。」</p>
+
+    <p class="attr">出處：《論語》；文本依教育局「指定文言經典學習材料」《論仁、論孝、論君子》之【論君子】部分（KS4_03 第 9–16 章）。註：以上僅就坊間所見資料，提供一個參考版本；教師亦可參考、使用其他版本。本頁只收【論君子】八章。</p>
+  </div>
+</section>
+
+<!-- ========== 3 語譯 ========== -->
+<section class="sec" id="yuyi">
+  <div class="sec-head-row">
+    <h2>三、語譯</h2>
+    <button type="button" class="btn-toggle" id="yuyiToggle" aria-controls="yuyiBody" aria-expanded="true">隱藏語譯</button>
+  </div>
+  <div id="yuyiBody">
+  <p class="note">以下語譯供自學參考，考試請以課文原文為準。</p>
+  <div class="card yuyi">
+    <h3>第一章</h3>
+    <p>孔子說：「君子如果不莊重，就沒有威儀；學習了，（所學）才會鞏固／才不會閉塞淺陋。以忠和信為主。不要跟不及自己的人交朋友（一說：不要跟與自己不同道的人交朋友）。有了過錯，就不要怕改正。」</p>
+    <h3>第二章</h3>
+    <p>孔子說：「君子心胸舒坦寬廣，小人卻經常局促憂愁。」</p>
+    <h3>第三章</h3>
+    <p>司馬牛問怎樣才算君子。孔子說：「君子不憂愁，不恐懼。」司馬牛說：「不憂愁、不恐懼，這樣就可以稱為君子了嗎？」孔子說：「自己反省而無愧於心，還有甚麼需要憂愁和恐懼呢？」</p>
+    <h3>第四章</h3>
+    <p>孔子說：「君子成全別人的好事，不促成別人的壞事。小人卻和這個相反。」</p>
+    <h3>第五章</h3>
+    <p>孔子說：「君子會因為自己說得多、做得少而感到羞恥。」</p>
+    <h3>第六章</h3>
+    <p>孔子說：「君子處事以合宜為原則，依禮節實行它，用謙遜的言語說出它，用誠實的態度完成它。這才是君子啊！」</p>
+    <h3>第七章</h3>
+    <p>孔子說：「君子只會因自己沒有能力而慚愧（擔憂），卻不會抱怨別人不了解自己。」</p>
+    <h3>第八章</h3>
+    <p>孔子說：「君子要求自己，小人則只會要求別人。」</p>
+  </div>
+  </div>
+</section>
+
+<!-- ========== 4 重點字詞 ========== -->
+<section class="sec" id="zici">
+  <h2>四、重點字詞</h2>
+  <p class="muted">以下重點詞語宜連同課文語境記誦。（注釋參考教育局材料）</p>
+  <div class="card vocab">
+    <div class="vocab-item"><b>君子</b><span>有德之人。本篇論君子的品德、修為，以及與小人之別。</span></div>
+    <div class="vocab-item"><b>不重／不威</b><span>不重＝不莊重；不威＝沒有威儀。「君子不重則不威」——君子如果不莊重，就沒有威儀。</span></div>
+    <div class="vocab-item"><b>學則不固</b><span>「固」有「鞏固」「固陋」兩解。全句兩解：一、即使讀書，所學也不會牢固；二、學了就不會閉塞淺陋。</span></div>
+    <div class="vocab-item"><b>主忠信</b><span>以忠和信兩種道德為主。</span></div>
+    <div class="vocab-item"><b>無友不如己者</b><span>（君子）不會跟不及自己的人交朋友。一說：（君子）不會與自己不同道的人交朋友。「友」此處作動詞，解作結交。</span></div>
+    <div class="vocab-item"><b>過則勿憚改</b><span>有了過錯，就不要怕改正。過＝過錯。憚＝害怕、畏懼；粵音［但］daan6。</span></div>
+    <div class="vocab-item"><b>坦蕩蕩／戚戚</b><span>坦蕩蕩＝心胸舒坦寬廣；戚戚＝局促憂愁的樣子。「君子坦蕩蕩，小人長戚戚」。</span></div>
+    <div class="vocab-item"><b>司馬牛</b><span>孔子學生，名耕，字子牛。</span></div>
+    <div class="vocab-item"><b>不憂不懼</b><span>不憂愁，不恐懼。</span></div>
+    <div class="vocab-item"><b>內省不疚</b><span>自己問心無愧（反省而無愧疚）。疚＝愧疚、內心不安。</span></div>
+    <div class="vocab-item"><b>夫何憂何懼</b><span>還有甚麼需要憂愁和恐懼呢？（反問）</span></div>
+    <div class="vocab-item"><b>成人之美／惡</b><span>成全別人的好事；不促成別人的壞事。美／惡此處指好事／壞事。</span></div>
+    <div class="vocab-item"><b>小人反是</b><span>小人卻和這個相反。是＝這個（上述做法）。</span></div>
+    <div class="vocab-item"><b>恥其言而過其行</b><span>因為自己說得多、做得少而感到羞恥。行＝行為、行事。</span></div>
+    <div class="vocab-item"><b>義以為質</b><span>以合宜為原則；以義為本質／根本。質＝本質。</span></div>
+    <div class="vocab-item"><b>孫（通遜）</b><span>謙遜。「孫以出之」——用謙遜的言語說出它。</span></div>
+    <div class="vocab-item"><b>病</b><span>憂慮、擔心；也可解作慚愧、抱怨。「君子病無能焉」——因自己無能而慚愧／擔心。</span></div>
+    <div class="vocab-item"><b>不己知</b><span>不了解自己。「不病人之不己知也」——不抱怨別人不了解自己。</span></div>
+    <div class="vocab-item"><b>求諸己／求諸人</b><span>求諸己＝求之於己，要求自己；求諸人＝要求別人。諸＝之於。</span></div>
+  </div>
+</section>
+
+<!-- ========== 5 章法／寫作手法 ========== -->
+<section class="sec" id="zhangfa">
+  <h2>五、章法／寫作手法</h2>
+  <div class="card struct">
+    <h3>1. 語錄體</h3>
+    <p>《論語》以<strong>語錄體</strong>寫成，多以「子曰」領起，記言簡明，記載孔子與弟子的言行與對話，現場感強。</p>
+    <h3>2. 主要寫作手法</h3>
+    <ul>
+      <li><strong>問答推進</strong>：司馬牛問君子——由「不憂不懼」推進到「內省不疚，夫何憂何懼」，揭示根源。</li>
+      <li><strong>君子／小人對比</strong>：「坦蕩蕩／長戚戚」「成人之美／小人反是」「求諸己／求諸人」——以對比突顯君子品德。</li>
+      <li><strong>對偶與疊字</strong>：「君子坦蕩蕩，小人長戚戚」——對偶整齊；疊字使心境描寫更鮮明。</li>
+      <li><strong>排比／層遞</strong>：「義以為質，禮以行之，孫以出之，信以成之」——四句同構，義→禮→孫→信層層展開。</li>
+      <li><strong>反問</strong>：「夫何憂何懼」——加強語氣，突出內省不疚則無所憂懼。</li>
+      <li><strong>條件句</strong>：「不重則不威」——說明莊重與威儀的關係。</li>
+      <li><strong>正反對舉</strong>：「病無能焉／不病人之不己知也」——責己之能，不怨人之不知。</li>
+    </ul>
+    <h3>3. 八章層遞</h3>
+    <p>章法上八章由<strong>修身品德</strong>（莊重、學習、忠信、擇友、改過）→<strong>心境</strong>（坦蕩、不憂不懼）→<strong>待人</strong>（成人之美）→<strong>言行</strong>（恥言過行）→<strong>行事準則</strong>（義禮孫信）→<strong>律己</strong>（病無能、求諸己），層層展開。</p>
+    <h3>4. 結構示意</h3>
+    <p>第一章：重・學・忠信・友・改　→　第二章：坦蕩／戚戚　→　第三章：不憂不懼→內省不疚　→　第四章：成人之美／小人反是　→　第五章：恥言過行　→　第六章：義→禮→孫→信　→　第七章：病無能／不病人不知　→　第八章：求諸己／求諸人。</p>
+  </div>
+</section>
+
+<!-- ========== 6 自測 ========== -->
+<section class="sec" id="zice">
+  <h2>六、自測</h2>
+  <p class="muted">題目為校本自測（內容理解／字詞解釋／寫作手法各 15 題，合共 45 題）。可先作答；交卷前請填學生資料。</p>
+
+  <div class="card" id="studentCard">
+    <h3>學生資料（交卷必填）</h3>
+    <div class="student-form">
+      <div>
+        <label class="field" for="cls">班別</label>
+        <input class="field" id="cls" name="cls" placeholder="例：4A" maxlength="4" autocomplete="off" required>
+      </div>
+      <div>
+        <label class="field" for="sid">學號</label>
+        <input class="field" id="sid" name="sid" placeholder="例：01" maxlength="4" autocomplete="off" required>
+      </div>
+      <div>
+        <label class="field" for="sname">姓名</label>
+        <input class="field" id="sname" name="sname" placeholder="請輸入姓名" maxlength="20" autocomplete="name" required>
+      </div>
+    </div>
+    <p class="muted" style="margin:8px 0 0">班別可用如 4A、5C、6D；學號請填兩位數字（如 01）。</p>
+  </div>
+
+  <div class="overall" id="overallBox">
+    <div class="prog-row"><strong>整體進度</strong><span id="overallText">0 / 45 題　總分 0</span></div>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="45" aria-valuenow="0" id="overallBar"><div id="overallFill"></div></div>
+    <div class="prog-row" style="margin-top:8px;font-size:.9rem">
+      <span>內容理解：<b id="scContent">0</b>/15</span>
+      <span>字詞解釋：<b id="scVocab">0</b>/15</span>
+      <span>寫作手法：<b id="scRhet">0</b>/15</span>
+    </div>
+  </div>
+
+  <div class="tabs" role="tablist" aria-label="練習部分">
+    <button type="button" role="tab" id="tab-content" aria-selected="true" aria-controls="panel-quiz" data-sec="content">內容理解（15）</button>
+    <button type="button" role="tab" id="tab-vocab" aria-selected="false" aria-controls="panel-quiz" data-sec="vocab">字詞解釋（15）</button>
+    <button type="button" role="tab" id="tab-rhet" aria-selected="false" aria-controls="panel-quiz" data-sec="rhetorical">寫作手法（15）</button>
+  </div>
+
+  <div class="card" id="panel-quiz" role="tabpanel">
+    <div class="prog-row"><span id="secProgText">第 1 / 15 題</span><span id="secScoreText">本節答對：0</span></div>
+    <div class="bar" id="secBar" role="progressbar" aria-valuemin="0" aria-valuemax="15" aria-valuenow="0"><div id="secFill"></div></div>
+    <form id="qform" onsubmit="return false" style="margin-top:12px">
+      <fieldset style="border:0;margin:0;padding:0">
+        <legend class="stem" id="stem"></legend>
+        <div id="opts"></div>
+      </fieldset>
+      <div id="fb" class="fb" hidden></div>
+      <button type="button" class="btn" id="checkBtn" disabled>檢查答案</button>
+      <div class="btn-row">
+        <button type="button" class="btn sec" id="nextBtn" hidden>下一題</button>
+        <button type="button" class="btn ok" id="secDoneBtn" hidden>完成本節</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="card" id="secResult" hidden>
+    <h3 id="secResultTitle">本節完成</h3>
+    <p class="big" id="secFinal"></p>
+    <p id="secFinalMsg" class="muted" style="text-align:center"></p>
+    <div class="btn-row">
+      <button type="button" class="btn sec" id="retrySecBtn">重做本節</button>
+      <button type="button" class="btn" id="goNextSecBtn">下一節</button>
+    </div>
+    <button type="button" class="btn warn" id="submitEarlyBtn" style="margin-top:10px" hidden>交卷（已完成全部）</button>
+    <h3>答題回顧</h3>
+    <div id="secReview"></div>
+  </div>
+
+  <div class="card" id="finalResult" hidden>
+    <h3>全部完成・交卷</h3>
+    <p class="big" id="finalScore"></p>
+    <p id="finalDetail" style="text-align:center"></p>
+    <p id="submitMsg" class="note" hidden></p>
+    <div class="btn-row">
+      <button type="button" class="btn ok" id="submitBtn">交卷至老師試算表</button>
+      <button type="button" class="btn sec" id="retryAllBtn">全部重做</button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 7 影片 ========== -->
+<section class="sec" id="shipin">
+  <h2>七、影片｜寶寶老師陪你快速溫範文</h2>
+  <div class="card">
+    <p><a id="videoTitleLink" href="#" target="_blank" rel="noopener">寶寶老師陪你快速溫範文｜《論君子》</a></p>
+    <div id="videoArea"></div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">漢華中學中國語文科　｜　《論君子》範文導讀　｜　供課堂投影及學生自學</footer>
+
+<script>
+(function () {
+"use strict";
+
+/* ===== 設定：預覽階段 GAS 留空；影片 ID 已填 ===== */
+const GAS_WEBAPP_URL = "";
+const YOUTUBE_ID = "HKjcHt62SSU";
+
+/* ===== 題庫：校本自測；o[0] 為正確答案 ===== */
+var Q_CONTENT = [{"s":"本頁指定溫習的範圍是：","o":["教育局《論仁、論孝、論君子》之【論君子】八章","論仁、論孝、論君子全部十六章","只有《學而》一篇","克己復禮與殺身成仁"],"e":"本頁只溫【論君子】八章；論仁、論孝另頁處理。"},{"s":"孔子的名與字分別是：","o":["名丘、字仲尼","名軻、字子輿","名回、字子淵","名耕、字子牛"],"e":"孔子名丘，字仲尼，春秋末期魯國人，儒家學派創始人。"},{"s":"教育局指定《論仁、論孝、論君子》由《論語》輯出，分為：","o":["論仁、論孝、論君子三部分","上片與下片","論詩、論書、論禮","論兵、論政、論商"],"e":"指定篇分三部分；本頁只溫論君子。"},{"s":"記住論君子的三個關鍵，較貼切的是：","o":["重・學・改｜坦蕩・內省｜義以為質・求諸己","安仁利仁｜克己復禮｜殺身成仁","無違｜敬｜幾諫","溫良恭儉讓"],"e":"校本三關鍵緊扣本選段：修身品德、心境內省、行事準則與律己。"},{"s":"「君子不重則不威；學則不固。主忠信。無友不如己者。過則勿憚改。」一章提出君子應有的修為，較貼切的概括是：","o":["莊重威儀、認真學習、忠信、慎擇友、過而能改","只講富貴貧賤的取捨","只講殺身成仁","只講供養父母"],"e":"教育局賞析：莊重威嚴、認真學習、慎擇朋友、過而能改（並主忠信）。"},{"s":"「學則不固」的「固」較常見的兩解是：","o":["鞏固／固陋（閉塞淺陋）","固執／固體","堅固城牆／固定職位","固然／故舊"],"e":"教育局注：「固」有「鞏固」「固陋」兩解，故全句亦有兩解。"},{"s":"「無友不如己者」較常見的兩解是：","o":["不與不及自己的人交友／不與不同道的人交友","絕不交任何朋友／只交達官貴人","只交後輩／不交師長","朋友愈多愈好／不必擇友"],"e":"一說不與不如己者交友（求勝己為友）；一說不與不同道者交友。"},{"s":"「君子坦蕩蕩，小人長戚戚」說明：","o":["君子心胸舒坦寬廣；小人經常局促憂愁","君子與小人外表完全相同","君子常常憂愁；小人心胸寬廣","君子只談學問；小人只談財利"],"e":"君子／小人對比：坦蕩蕩對長戚戚。"},{"s":"司馬牛問君子，孔子認為君子能「不憂不懼」的原因是：","o":["內省不疚，問心無愧","有權有勢，無人敢犯","不理世事，無所牽掛","勇武過人，無所畏懼"],"e":"「內省不疚，夫何憂何懼？」"},{"s":"「君子成人之美，不成人之惡。小人反是。」的意思是：","o":["君子成全別人的好事，不促成別人的壞事；小人則相反","君子只讚美別人，不批評別人","君子幫助別人變得富有","君子不與任何人交往"],"e":"君子／小人操行對比：成人之美 vs 成人之惡。"},{"s":"「君子恥其言而過其行」的意思是：","o":["君子以說得多而做得少為恥","君子以說話太少為恥","君子以行為過分為恥","君子說話要比行動快"],"e":"強調言行一致、少說多做。"},{"s":"「君子義以為質，禮以行之，孫以出之，信以成之」指君子：","o":["以義為根本，以禮實行，以謙遜表達，以誠信完成","以禮為根本，以義實行，以誠信表達，以謙遜完成","只重禮節儀式，不必理會義與信","以言辭為根本，以禮節修飾"],"e":"義→禮→孫→信四者兼備，方為君子。"},{"s":"「君子病無能焉，不病人之不己知也」的意思是：","o":["君子只擔心自己沒有才能，不擔心別人不了解自己","君子擔心自己生病，也擔心別人不了解病情","君子希望人人都知道自己","君子不需要才能，只要別人了解自己便足夠"],"e":"強調反求諸己、律己以嚴。"},{"s":"「君子求諸己，小人求諸人」說明：","o":["君子要求自己；小人則只會要求別人","君子要求別人；小人要求自己","君子與小人都只要求別人","君子與小人都只要求自己"],"e":"君子／小人對比：求諸己 vs 求諸人。"},{"s":"綜合論君子八章的層遞，較貼切的是：","o":["修身品德→心境→待人→言行→行事準則→律己","安仁→克己→成仁→無違","只有一章反覆抄寫","論仁與論孝穿插其間"],"e":"由莊重學習改過，到坦蕩內省、成人之美、言行一致，再到義禮孫信與求諸己。"}];
+var Q_VOCAB = [{"s":"「君子不重則不威」的「重」意思是：","o":["莊重","重量","重複","重視"],"e":"君子如果不莊重，就沒有威儀。"},{"s":"「學則不固」的「固」可解作：","o":["鞏固，或固陋（閉塞淺陋）","固執己見（唯一解）","固體物質","故舊朋友"],"e":"教育局注有兩解：所學不牢固；或學了就不會閉塞淺陋。"},{"s":"「主忠信」的意思是：","o":["以忠和信兩種道德為主","只忠於君主","只講信用不講忠","主管忠信部門"],"e":"教育局注：以忠和信兩種道德為主。"},{"s":"「無友不如己者」的「友」字用法是：","o":["結交（作動詞）","朋友（只作名詞）","友善地對待","友愛兄弟"],"e":"此處「友」用作動詞，解作結交。"},{"s":"「過則勿憚改」的「憚」意思與粵音是：","o":["害怕、畏懼；粵音［但］daan6","忌諱；粵音［丹］daan1","憎恨；粵音［彈］taan4","疲倦；粵音［但］daan6"],"e":"有了過錯，就不要怕改正。憚＝害怕。"},{"s":"「君子坦蕩蕩，小人長戚戚」的「戚戚」意思是：","o":["憂懼、局促憂愁的樣子","親戚眾多的樣子","悲傷哭泣的樣子","歡喜自得的樣子"],"e":"小人經常局促憂愁。"},{"s":"司馬牛是：","o":["孔子學生，名耕，字子牛","孔子學生顏淵","魯國大夫孟懿子","孔子本人的號"],"e":"教育局注：司馬牛，孔子學生，名耕，字子牛。"},{"s":"「內省不疚」的「疚」意思是：","o":["愧疚、內心不安","疾病、身體不適","責怪、埋怨他人","長久、時間久遠"],"e":"自己反省而無愧於心。"},{"s":"「斯謂之君子已乎」的「斯」較指：","o":["這樣、此","撕開","廝役","思慮"],"e":"這樣就可以稱為君子了嗎？"},{"s":"「君子成人之美，不成人之惡」的「美／惡」較指：","o":["好事／壞事","美麗／醜陋（僅外貌）","美食／惡食","美名／惡名（僅名聲）"],"e":"成全別人的好事，不促成別人的壞事。"},{"s":"「小人反是」的「是」較指：","o":["這個（上述做法）","正確無誤","是否","於是"],"e":"小人卻和這個相反。"},{"s":"「孫以出之」的「孫」意思是：","o":["通「遜」，謙遜","子孫，後代","孫子，晚輩","通「巡」，巡視"],"e":"用謙遜的言語說出它。孫＝遜。"},{"s":"「君子義以為質」的「質」意思是：","o":["本質、根本","質問","人質","樸質無文（唯一解）"],"e":"君子處事以合宜為原則；義以為質＝以義為本。"},{"s":"「君子病無能焉」的「病」意思是：","o":["憂慮、擔心；也可解作慚愧、抱怨","生病、患病（唯一解）","缺點、毛病（唯一解）","疲累、困乏（唯一解）"],"e":"君子只會因自己沒有能力而慚愧／擔心，卻不抱怨別人不了解自己。"},{"s":"「君子求諸己」的「諸」意思是：","o":["之於","諸位","各種","眾多"],"e":"「求諸己」即求之於己，要求自己。"}];
+var Q_RHET = [{"s":"《論語》的文體主要是：","o":["語錄體（記言、對話為主）","長篇記敘小說","律詩","詞上下片"],"e":"以語錄和對話寫成，記載孔子及其弟子言行；「子曰」領起，記言簡明。"},{"s":"「君子坦蕩蕩，小人長戚戚」主要運用：","o":["對比（君子／小人心境相對）","比喻花燈","誇張寫景","設問為唯一手法"],"e":"以君子心胸寬廣與小人常懷憂懼對比。"},{"s":"「坦蕩蕩」「戚戚」運用疊字的作用是：","o":["形象描寫心境，加強節奏","表示人數眾多","表示時間長久","模擬聲音"],"e":"疊字使心態描寫更鮮明。"},{"s":"司馬牛兩次發問，孔子兩次作答，這種寫法的作用是：","o":["以問答推進，揭示不憂不懼的根源","表現司馬牛愚笨","增加篇幅","製造無關懸念"],"e":"由「不憂不懼」推進至「內省不疚」。"},{"s":"「內省不疚，夫何憂何懼」主要運用：","o":["反問，加強語氣","設問自答為唯一","比喻","排比四勿"],"e":"反問：問心無愧，又有甚麼可憂懼呢？"},{"s":"「義以為質，禮以行之，孫以出之，信以成之」主要運用：","o":["排比（四句同構層遞）","對比君子小人","反問","比喻"],"e":"四句同構，義→禮→孫→信層層展開。"},{"s":"「君子成人之美，不成人之惡。小人反是。」在說理上屬：","o":["君子／小人對比說理","純寫景","七組疊字","書信體往來"],"e":"先正面寫君子，再以「小人反是」對照。"},{"s":"「君子求諸己，小人求諸人」的句式特點較接近：","o":["對偶／對比，結構對稱","純排比四勿","通感","象徵寄託為唯一"],"e":"求諸己／求諸人相對，突出律己與責人的分別。"},{"s":"「君子不重則不威」一句的句式是：","o":["條件句，說明莊重與威嚴的關係","疑問句","感歎句","比喻句"],"e":"「不……則不……」表條件關係。"},{"s":"《論語》各章多以「子曰」領起，這種記錄方式的作用是：","o":["突出孔子言論，記言簡明直接","鋪陳故事情節","描寫人物外貌","渲染環境氣氛"],"e":"直接記錄孔子言論，簡潔而有權威。"},{"s":"本篇【論君子】常見的寫作手法組合，較貼切的是：","o":["語錄體＋君子小人對比＋排比層遞＋反問＋問答推進","只有七組疊字＋入聲韻","上下片景→人＋卒章顯志","純書信體往來"],"e":"校本／影片手法對照與此一致。"},{"s":"下列哪一項不是本篇【論君子】寫作手法重點？","o":["七組疊字層進（屬《聲聲慢》）","語錄體","君子／小人對比","義禮孫信排比層遞"],"e":"疊字層進是李清照《聲聲慢》特色；論君子重點是語錄、對比、排比層遞、反問、問答。"},{"s":"八章整體章法較貼切的描述是：","o":["由修身品德到心境、待人、言行、行事準則、律己，層層展開","四章內容完全重複","由喜懼倒說到無違","論君子與論仁混編無序"],"e":"層遞是本篇章法關鍵。"},{"s":"「君子病無能焉，不病人之不己知也」在說理上的作用較接近：","o":["正反對舉：責己之能 vs 不怨人之不知","取消求諸己","改寫成論孝","只記時間日期"],"e":"一面病己無能，一面不病人不知——突出反求諸己。"},{"s":"本篇文字風格較貼切的描述是：","o":["簡煉記言，善用對比、排比、反問與問答，增強氣勢與理趣","長篇鋪陳元宵盛景","白描疊字寫秋愁","駢賦鋪彩摛文為主"],"e":"語錄簡明而修辭豐富，令君子形象鮮明易記。"}];
+
+var SECTIONS = {
+  content: { key: 'content', title: '內容理解', Q: Q_CONTENT },
+  vocab: { key: 'vocab', title: '字詞解釋', Q: Q_VOCAB },
+  rhetorical: { key: 'rhetorical', title: '寫作手法', Q: Q_RHET }
+};
+var SEC_ORDER = ['content', 'vocab', 'rhetorical'];
+var MAX_TOTAL = 45;
+var DRAFT_KEY = 'lunjunzi_daodu_draft';
+
+function shuffle(a) {
+  a = a.slice();
+  for (var i = a.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a;
+}
+function $(id) { return document.getElementById(id); }
+
+var state = {};
+SEC_ORDER.forEach(function (k) {
+  state[k] = { order: null, cur: 0, answers: [], finished: false, score: 0 };
+});
+var currentSec = 'content';
+
+function studentInfo() {
+  return {
+    class: ($('cls').value || '').trim().toUpperCase(),
+    studentId: ($('sid').value || '').trim(),
+    name: ($('sname').value || '').trim()
+  };
+}
+function requireStudent() {
+  var s = studentInfo();
+  if (!s.class || !s.studentId || !s.name) {
+    alert('請先填寫班別、學號、姓名，再開始或交卷。');
+    $('studentCard').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    $('cls').focus();
+    return null;
+  }
+  return s;
+}
+
+function prepareOrder(secKey) {
+  var Q = SECTIONS[secKey].Q;
+  return Q.map(function (q) {
+    return { s: q.s, e: q.e, ans: q.o[0], o: shuffle(q.o) };
+  });
+}
+
+function startSection(secKey, force) {
+  currentSec = secKey;
+  var st = state[secKey];
+  if (force || !st.order) {
+    st.order = prepareOrder(secKey);
+    st.cur = 0;
+    st.answers = [];
+    st.finished = false;
+    st.score = 0;
+  }
+  document.querySelectorAll('.tabs button').forEach(function (b) {
+    var on = b.getAttribute('data-sec') === secKey;
+    b.setAttribute('aria-selected', on ? 'true' : 'false');
+    b.classList.toggle('active', on);
+  });
+  $('finalResult').hidden = true;
+  if (st.finished) {
+    $('panel-quiz').hidden = true;
+    showSecResult(secKey);
+  } else {
+    $('secResult').hidden = true;
+    $('panel-quiz').hidden = false;
+    showQuestion();
+  }
+  updateOverall();
+}
+
+function setSecScore(secKey) {
+  var st = state[secKey];
+  var s = 0;
+  for (var i = 0; i < st.answers.length; i++) {
+    if (st.answers[i] && st.answers[i].ok) s++;
+  }
+  st.score = s;
+  return s;
+}
+
+function updateOverall() {
+  var done = 0, totalScore = 0;
+  SEC_ORDER.forEach(function (k) {
+    var st = state[k];
+    var answered = st.answers.filter(function (a) { return a; }).length;
+    done += answered;
+    totalScore += setSecScore(k);
+  });
+  $('overallFill').style.width = (done / MAX_TOTAL * 100) + '%';
+  $('overallBar').setAttribute('aria-valuenow', String(done));
+  $('overallText').textContent = done + ' / ' + MAX_TOTAL + ' 題　總分 ' + totalScore;
+  $('scContent').textContent = state.content.score;
+  $('scVocab').textContent = state.vocab.score;
+  $('scRhet').textContent = state.rhetorical.score;
+
+  var allDone = SEC_ORDER.every(function (k) { return state[k].finished; });
+  if (allDone) {
+    $('submitEarlyBtn').hidden = false;
+    showFinal();
+  }
+}
+
+function showQuestion() {
+  var st = state[currentSec];
+  var q = st.order[st.cur];
+  var N = st.order.length;
+  st._picked = null;
+  st._checked = false;
+  $('stem').textContent = (st.cur + 1) + '. ' + q.s;
+  var box = $('opts');
+  box.innerHTML = '';
+  q.o.forEach(function (t, i) {
+    var l = document.createElement('label');
+    l.className = 'opt';
+    var r = document.createElement('input');
+    r.type = 'radio'; r.name = 'opt'; r.value = String(i);
+    var sp = document.createElement('span');
+    sp.textContent = String.fromCharCode(65 + i) + '. ' + t;
+    l.appendChild(r); l.appendChild(sp);
+    r.addEventListener('change', function () {
+      if (st._checked) return;
+      st._picked = i;
+      Array.prototype.forEach.call(box.children, function (c) { c.classList.remove('sel'); });
+      l.classList.add('sel');
+      $('checkBtn').disabled = false;
+    });
+    box.appendChild(l);
+  });
+  $('fb').hidden = true;
+  $('checkBtn').hidden = false;
+  $('checkBtn').disabled = true;
+  $('nextBtn').hidden = true;
+  $('secDoneBtn').hidden = true;
+  var answered = st.answers.filter(function (a) { return a; }).length;
+  $('secFill').style.width = (answered / N * 100) + '%';
+  $('secBar').setAttribute('aria-valuenow', String(answered));
+  $('secProgText').textContent = '第 ' + (st.cur + 1) + ' / ' + N + ' 題';
+  $('secScoreText').textContent = '本節答對：' + st.score;
+}
+
+function checkAnswer() {
+  var st = state[currentSec];
+  if (st._checked || st._picked === null) return;
+  st._checked = true;
+  $('checkBtn').disabled = true;
+  var q = st.order[st.cur];
+  var ok = q.o[st._picked] === q.ans;
+  st.answers[st.cur] = { ok: ok, pick: q.o[st._picked], ans: q.ans, idx: st.cur };
+  var labs = $('opts').children;
+  for (var i = 0; i < labs.length; i++) {
+    labs[i].querySelector('input').disabled = true;
+    if (q.o[i] === q.ans) labs[i].classList.add('ok');
+    else if (i === st._picked) labs[i].classList.add('bad');
+  }
+  var fb = $('fb');
+  fb.hidden = false;
+  fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+  fb.textContent = (ok ? '✔ 答對了！' : '✘ 答錯了。正確答案：' + q.ans) + '　解說：' + q.e;
+  setSecScore(currentSec);
+  updateOverall();
+  $('secScoreText').textContent = '本節答對：' + st.score;
+  var answered = st.answers.filter(function (a) { return a; }).length;
+  var N = st.order.length;
+  $('secFill').style.width = (answered / N * 100) + '%';
+  $('checkBtn').hidden = true;
+  if (st.cur < N - 1) $('nextBtn').hidden = false;
+  else $('secDoneBtn').hidden = false;
+}
+
+function nextQuestion() {
+  var st = state[currentSec];
+  if (!st._checked) return;
+  if (st.cur < st.order.length - 1) {
+    st.cur++;
+    showQuestion();
+  }
+}
+
+function finishSection() {
+  var st = state[currentSec];
+  if (!st._checked) return;
+  st.finished = true;
+  setSecScore(currentSec);
+  updateOverall();
+  showSecResult(currentSec);
+  saveDraft();
+  if (SEC_ORDER.every(function (k) { return state[k].finished; })) {
+    showFinal();
+  }
+}
+
+function showSecResult(secKey) {
+  var st = state[secKey];
+  var N = SECTIONS[secKey].Q.length;
+  $('panel-quiz').hidden = true;
+  $('secResult').hidden = false;
+  $('secResultTitle').textContent = SECTIONS[secKey].title + '・本節完成';
+  $('secFinal').textContent = '得分：' + st.score + ' / ' + N;
+  var p = st.score / N;
+  $('secFinalMsg').textContent = p >= 0.8 ? '表現出色，繼續保持！' : p >= 0.5 ? '不錯，請重溫答錯的題目。' : '請細閱課文及解說，再試一次。';
+  var rv = $('secReview');
+  rv.innerHTML = '';
+  st.order.forEach(function (q, i) {
+    var a = st.answers[i];
+    if (!a) return;
+    var d = document.createElement('div');
+    d.className = 'rv';
+    var t = document.createElement('div');
+    t.className = 't';
+    t.textContent = (i + 1) + '. ' + q.s;
+    var r = document.createElement('div');
+    r.className = a.ok ? 'c' : 'w';
+    r.textContent = (a.ok ? '✔ 你的答案：' : '✘ 你的答案：') + a.pick + (a.ok ? '' : '｜正確答案：' + q.ans);
+    var e = document.createElement('div');
+    e.className = 'muted';
+    e.textContent = '解說：' + q.e;
+    d.appendChild(t); d.appendChild(r); d.appendChild(e);
+    rv.appendChild(d);
+  });
+  var idx = SEC_ORDER.indexOf(secKey);
+  var nextKey = idx < SEC_ORDER.length - 1 ? SEC_ORDER[idx + 1] : null;
+  $('goNextSecBtn').hidden = !nextKey;
+  $('goNextSecBtn').textContent = nextKey ? '前往「' + SECTIONS[nextKey].title + '」' : '';
+  $('goNextSecBtn').onclick = nextKey ? function () {
+    startSection(nextKey, false);
+    $('zice').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } : null;
+  $('submitEarlyBtn').hidden = !SEC_ORDER.every(function (k) { return state[k].finished; });
+}
+
+function wrongSummary() {
+  var parts = [];
+  SEC_ORDER.forEach(function (k) {
+    var st = state[k];
+    var wrong = [];
+    st.answers.forEach(function (a, i) {
+      if (a && !a.ok) wrong.push(i + 1);
+    });
+    if (wrong.length) parts.push(SECTIONS[k].title + '錯題:' + wrong.join(','));
+  });
+  return parts.join('；') || '全對';
+}
+
+function buildPayload(stu) {
+  var sc = state.content.score;
+  var sv = state.vocab.score;
+  var sr = state.rhetorical.score;
+  var total = sc + sv + sr;
+  return {
+    timestamp: new Date().toISOString(),
+    class: stu.class,
+    studentId: stu.studentId,
+    name: stu.name,
+    scoreContent: sc,
+    scoreVocab: sv,
+    scoreRhetorical: sr,
+    scoreTotal: total,
+    maxTotal: MAX_TOTAL,
+    percent: Math.round(total / MAX_TOTAL * 1000) / 10,
+    answersSummary: wrongSummary(),
+    userAgent: navigator.userAgent || ''
+  };
+}
+
+function showFinal() {
+  if (!SEC_ORDER.every(function (k) { return state[k].finished; })) return;
+  $('finalResult').hidden = false;
+  var total = state.content.score + state.vocab.score + state.rhetorical.score;
+  $('finalScore').textContent = '總分：' + total + ' / ' + MAX_TOTAL;
+  $('finalDetail').innerHTML =
+    '內容理解 ' + state.content.score + '/15　｜　字詞解釋 ' + state.vocab.score +
+    '/15　｜　寫作手法 ' + state.rhetorical.score + '/15<br>正確率 ' +
+    (Math.round(total / MAX_TOTAL * 1000) / 10) + '%';
+  saveDraft();
+}
+
+function saveDraft() {
+  try {
+    var stu = studentInfo();
+    var draft = {
+      student: stu,
+      scores: {
+        content: state.content.score,
+        vocab: state.vocab.score,
+        rhetorical: state.rhetorical.score
+      },
+      finished: SEC_ORDER.map(function (k) { return { k: k, done: state[k].finished, score: state[k].score }; }),
+      summary: wrongSummary(),
+      savedAt: new Date().toISOString()
+    };
+    localStorage.setItem(DRAFT_KEY, JSON.stringify(draft));
+  } catch (e) {}
+}
+
+function submitToSheet() {
+  var stu = requireStudent();
+  if (!stu) return;
+  if (!SEC_ORDER.every(function (k) { return state[k].finished; })) {
+    alert('請先完成三個部分的全部題目，再交卷。');
+    return;
+  }
+  var payload = buildPayload(stu);
+  saveDraft();
+  var msg = $('submitMsg');
+  msg.hidden = false;
+
+  if (!GAS_WEBAPP_URL) {
+    msg.textContent = '成績已暫存在本機。目前未能上傳至老師試算表，請稍後再試或向老師查詢。';
+    return;
+  }
+  msg.textContent = '正在上傳成績…';
+  $('submitBtn').disabled = true;
+  fetch(GAS_WEBAPP_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify(payload)
+  }).then(function () {
+    msg.textContent = '✔ 已送出交卷請求。若老師試算表「交卷紀錄」出現新列，即表示成功。';
+    $('submitBtn').disabled = false;
+  }).catch(function () {
+    msg.textContent = '✘ 上傳失敗，請檢查網絡後再試。本機草稿已保存。';
+    $('submitBtn').disabled = false;
+  });
+}
+
+var yuyiToggle = $('yuyiToggle');
+var yuyiBody = $('yuyiBody');
+if (yuyiToggle && yuyiBody) {
+  yuyiToggle.addEventListener('click', function () {
+    var hide = !yuyiBody.hidden;
+    yuyiBody.hidden = hide;
+    yuyiToggle.setAttribute('aria-expanded', hide ? 'false' : 'true');
+    yuyiToggle.textContent = hide ? '顯示語譯' : '隱藏語譯';
+  });
+}
+
+function renderVideo() {
+  var area = $('videoArea');
+  var link = $('videoTitleLink');
+  var title = '寶寶老師陪你快速溫範文｜《論君子》';
+  if (YOUTUBE_ID) {
+    link.href = 'https://www.youtube.com/watch?v=' + encodeURIComponent(YOUTUBE_ID);
+    area.innerHTML = '<div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/' +
+      encodeURIComponent(YOUTUBE_ID) + '?rel=0" title="' + title + '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>' +
+      '<p class="muted" style="margin-top:10px">若本機開啟（file://）未能播放，請改用上方連結，或發佈後於網頁觀看。</p>';
+  } else {
+    link.href = '#shipin';
+    link.removeAttribute('target');
+    area.innerHTML = '<div class="video-box"><strong>影片即將上線</strong><span>' + title + '</span></div>';
+  }
+}
+
+document.querySelectorAll('.tabs button').forEach(function (b) {
+  b.addEventListener('click', function () {
+    startSection(b.getAttribute('data-sec'), false);
+  });
+});
+$('checkBtn').addEventListener('click', checkAnswer);
+$('nextBtn').addEventListener('click', nextQuestion);
+$('secDoneBtn').addEventListener('click', finishSection);
+$('retrySecBtn').addEventListener('click', function () {
+  startSection(currentSec, true);
+  $('zice').scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+$('submitBtn').addEventListener('click', submitToSheet);
+$('submitEarlyBtn').addEventListener('click', function () {
+  showFinal();
+  $('finalResult').scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+$('retryAllBtn').addEventListener('click', function () {
+  if (!confirm('確定全部重做？目前得分將重置。')) return;
+  SEC_ORDER.forEach(function (k) {
+    state[k] = { order: null, cur: 0, answers: [], finished: false, score: 0 };
+  });
+  $('finalResult').hidden = true;
+  startSection('content', true);
+  updateOverall();
+});
+
+try {
+  var d = localStorage.getItem(DRAFT_KEY);
+  if (d) {
+    var draft = JSON.parse(d);
+    if (draft.student) {
+      if (draft.student.class) $('cls').value = draft.student.class;
+      if (draft.student.studentId) $('sid').value = draft.student.studentId;
+      if (draft.student.name) $('sname').value = draft.student.name;
+    }
+  }
+} catch (e) {}
+
+renderVideo();
+updateOverall();
+startSection('content', false);
+
+})();
+</script>
+</body>
+</html>
